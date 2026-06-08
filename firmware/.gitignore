@@ -1,0 +1,31 @@
+# PlatformIO build artifacts
+.pio/
+.pioenvs/
+.piolibdeps/
+.pio/build/
+libdeps/
+
+# PlatformIO temp / cache
+.pio/projectfiles
+.pio/ctags*
+
+# Build outputs
+*.bin
+*.elf
+*.hex
+*.map
+*.lst
+*.a
+*.o
+*.d
+
+# Editor settings
+.vscode/
+.idea/
+
+# Environment / secrets
+.env
+
+# System files
+.DS_Store
+Thumbs.db
