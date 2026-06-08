@@ -38,19 +38,19 @@ The main objective is to design and develop a low-cost IoT-based monitoring syst
 - Supports data-driven agricultural decisions
 
 
-# 4. System Scope (MVP – Mark 1)
+## 4. System Scope (MVP – Mark 1)
 
 The first version of the system will focus on a Minimum Viable Product (MVP):
 
 ### Parameters to be measured:
-- Temperature
-- Humidity
-- Soil moisture
+- Temperature  
+- Humidity  
+- Soil moisture  
 
 ### Hardware components:
-- ESP32 microcontroller
-- DHT22 sensor
-- Capacitive soil moisture sensor
+- ESP32 microcontroller  
+- DHT22 sensor  
+- Capacitive soil moisture sensor  
 
 ### Data flow:
 Sensor data → ESP32 → Serial Monitor (initial stage)
