@@ -106,18 +106,47 @@ Farmer
 - Firebase (under evaluation)
 
 
-## Repository Structure
+# Repository Structure
 
 smart-farm-monitoring-system/
 │
+├── .gitignore
 ├── README.md
-├── docs/
-├── research/
+│
+├── firmware/
+│   ├── platformio.ini
+│   ├── src/
+│   │   └── main.cpp
+│   ├── include/
+│   ├── lib/
+│   └── test/
+│
 ├── hardware/
-├── software/
+│   └── v1_sensor_node/
+│       └── wiring.md
+│
+├── research/
+│   ├── 01-problem-statement.md
+│   ├── 02-requirements.md
+│   └── 03-system-design.md
+│
+├── docs/
+│   ├── setup-guide.md
+│   ├── architecture.md
+│   └── api-reference.md
+│
 ├── data/
+│   └── sample-readings.csv
+│
 ├── images/
+│   ├── wiring-diagram.png
+│   └── system-architecture.png
+│
 └── project-management/
+├── milestones.md
+├── roadmap.md
+└── tasks.md
+
 
 
 ## Development Roadmap
