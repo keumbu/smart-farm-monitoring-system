@@ -10,6 +10,10 @@
 
 The Smart Farm Monitoring System is an ESP32-powered IoT platform designed to collect, process, and visualize environmental, soil, and crop data in real time. The system leverages cloud connectivity and data analytics to support smarter farming decisions and improve agricultural productivity.
 
+## Research Title
+
+Design and Implementation of an IoT-Based Smart Farming Monitoring System
+
 ## Project Overview
 
 The Smart Farm Monitoring System is an IoT-based research and development project focused on creating a low-cost, cloud-connected device for collecting and analyzing agricultural data.
