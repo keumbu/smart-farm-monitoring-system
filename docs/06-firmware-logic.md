@@ -1,4 +1,4 @@
-# 10- Firmware Logic
+# 06- Firmware Logic
 
 ## Overview
 
