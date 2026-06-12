@@ -1,8 +1,6 @@
 #  Smart Farm Monitoring System
 
-## IoT-Based Agricultural Monitoring System (MVP + Research Prototype)
-
-The IoT-Based Agricultural Monitoring System (MVP + Research Prototype) is an ESP32-powered smart farming solution designed to collect and analyze real-time environmental data such as soil moisture, temperature, humidity, and light intensity. The system demonstrates core IoT principles by integrating embedded sensors, wireless communication, and cloud-based data processing to support data-driven agricultural decision-making. It is currently in an MVP and research phase, focusing on system validation, modular firmware design, and scalable architecture for future smart agriculture applications.
+## IoT-Based Agricultural Monitoring System (MVP + Research Prototyp
 
 ##  Badges
 
