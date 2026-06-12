@@ -171,10 +171,22 @@ The relationship can be summarized as:
 
 Sensors → Data Collection → IoT Connectivity → Data Analytics → Precision Decisions
 
-
 Through this process, farmers can make accurate, evidence-based decisions regarding irrigation, fertilization, pest management, and crop production.
 
+2.5 Discussion
 
-Smart Farming, Data-Driven Agriculture, IoT, and Precision Agriculture collectively represent the foundation of modern agricultural innovation. These technologies enable the transformation of traditional farming practices into intelligent, connected, and efficient systems capable of meeting the growing demands of global food production while promoting sustainability and resource conservation.
+The integration of Smart Farming, IoT, Data-Driven Agriculture, and Precision Agriculture represents a significant transformation in modern agricultural practices. These technologies collectively shift agriculture from a reactive system based on observation and experience to a proactive and intelligent system driven by real-time data and analytics.
 
-The Smart Farm Monitoring System developed in this project is built upon these foundational concepts and seeks to demonstrate how IoT technologies can be applied to collect, process, and utilize agricultural data for improved decision-making and farm management.
+One of the most critical observations is that agricultural inefficiencies are largely caused by the lack of timely and accurate data. Traditional farming systems often operate with delayed information, resulting in over-irrigation, under-fertilization, and late detection of crop diseases. IoT-based systems directly address this limitation by enabling continuous environmental monitoring and immediate data availability.
+
+Furthermore, the integration of data analytics and decision-support systems enhances the ability of farmers to interpret complex environmental conditions. This allows for optimized resource utilization, improved crop yield, and reduced environmental impact. The combination of sensing technologies, edge computing, and cloud platforms forms a complete ecosystem that supports intelligent agricultural management.
+
+However, challenges such as infrastructure limitations, connectivity issues in rural areas, and cost constraints still affect the large-scale adoption of Smart Farming systems. These limitations highlight the need for scalable, low-cost, and energy-efficient solutions such as ESP32-based IoT systems.
+
+2.6 Conclusion
+
+This chapter has presented the foundational concepts underlying modern Smart Farming systems, including Smart Farming, Data-Driven Agriculture, IoT, and Precision Agriculture. These technologies collectively define the structure and operation of intelligent agricultural systems.
+
+The analysis demonstrates that IoT serves as the core enabling technology that connects physical farm environments with digital systems, allowing for real-time monitoring, data processing, and decision-making. Precision Agriculture further enhances this capability by enabling targeted and efficient resource utilization.
+
+The Smart Farm Monitoring System developed in this project is built upon these foundational principles and demonstrates how IoT technologies can be applied to transform traditional agriculture into a smart, connected, and data-driven system.
