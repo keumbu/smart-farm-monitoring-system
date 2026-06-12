@@ -11,14 +11,6 @@
 ![Architecture](https://img.shields.io/badge/architecture-IoT-lightgrey)
 
 
-| Badge        | Meaning                                 |
-| ------------ | --------------------------------------- |
-| Status       | Active MVP development phase            |
-| Platform     | ESP32 microcontroller-based system      |
-| Framework    | PlatformIO build system                 |
-| Language     | Embedded C++ (Arduino framework)        |
-| Architecture | IoT-based smart agriculture system      |
-
 ##  Project Status
 
  **Current Stage:** MVP (Minimum Viable Prototype)  
