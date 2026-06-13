@@ -46,7 +46,7 @@ The objective is to transform raw agricultural data into actionable insights tha
 
 ### Importance of Data in Agriculture
 
-Agricultural environments are influenced by numerous variables including weather conditions, soil properties, crop health, water availability, and management practices. Continuous collection and analysis of these variables provide valuable information for decision-making.
+Agricultural environments are influenced by multiple dynamic variables such as weather conditions, soil properties, crop health, water availability, and management practices. Continuous collection and analysis of these variables provide valuable information for decision-making and operational efficiency.
 
 Data-driven approaches enable farmers to:
 
@@ -66,6 +66,16 @@ Common agricultural data sources include:
 - Irrigation systems
 - Farm equipment and machinery
 - Historical agricultural records
+
+### Traditional vs Smart Farming Comparison
+
+| Traditional Farming | Smart Farming                 |
+| ------------------- | ----------------------------- |
+| Manual observation  | Real-time IoT monitoring      |
+| Reactive decisions  | Data-driven decisions         |
+| Low precision       | High precision agriculture    |
+| Resource wastage    | Optimized resource usage      |
+| Delayed response    | Instant alerts and monitoring |
 
 
 ## 2.3 The Role of IoT in Agriculture
@@ -126,6 +136,10 @@ Functions include:
 
 Provides dashboards, reports, alerts, and decision-support tools for end users.
 
+#### System-Specific Integration 
+
+In this project, the ESP32 functions as the central edge computing unit responsible for real-time sensor data acquisition, processing, and wireless transmission to cloud-based platforms. This ensures low-cost, scalable, and efficient monitoring of agricultural environments.
+
 ### Benefits of IoT in Agriculture
 
 - Real-time monitoring
@@ -173,7 +187,21 @@ Sensors → Data Collection → IoT Connectivity → Data Analytics → Precisio
 
 Through this process, farmers can make accurate, evidence-based decisions regarding irrigation, fertilization, pest management, and crop production.
 
-## 2.5 Discussion
+
+## 2.5 Research Gap
+
+Despite advancements in Smart Farming and IoT technologies, several limitations still exist in current agricultural systems:
+
+- High cost of existing smart farming solutions
+- Limited adoption in small-scale farming environments
+- Lack of real-time, low-cost monitoring systems
+- Poor integration between edge devices and cloud analytics
+- Limited scalability for rural agricultural settings
+
+This creates a need for affordable, scalable, and efficient IoT-based monitoring systems such as the one proposed in this research.
+
+
+## 2.6 Discussion
 
 The integration of Smart Farming, IoT, Data-Driven Agriculture, and Precision Agriculture represents a significant transformation in modern agricultural practices. These technologies collectively shift agriculture from a reactive system based on observation and experience to a proactive and intelligent system driven by real-time data and analytics.
 
@@ -183,7 +211,7 @@ Furthermore, the integration of data analytics and decision-support systems enha
 
 However, challenges such as infrastructure limitations, connectivity issues in rural areas, and cost constraints still affect the large-scale adoption of Smart Farming systems. These limitations highlight the need for scalable, low-cost, and energy-efficient solutions such as ESP32-based IoT systems.
 
-## 2.6 Conclusion
+## 2.7 Conclusion
 
 This chapter has presented the foundational concepts underlying modern Smart Farming systems, including Smart Farming, Data-Driven Agriculture, IoT, and Precision Agriculture. These technologies collectively define the structure and operation of intelligent agricultural systems.
 
