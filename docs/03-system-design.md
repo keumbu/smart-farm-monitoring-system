@@ -2,175 +2,181 @@
 
 ## Overview
 
-The Smart Farm Monitoring System is an Internet of Things (IoT)-based agricultural monitoring platform designed to collect, process, transmit, and visualize real-time environmental and soil data. The system utilizes distributed sensors, an ESP32 microcontroller, wireless communication technologies, cloud services, and data visualization tools to provide actionable insights for agricultural decision-making.
+The Smart Farm Monitoring System is an Internet of Things (IoT)-based agricultural monitoring platform designed to enable real-time acquisition, processing, transmission, and visualization of environmental and soil data. The system integrates distributed sensing units, an ESP32 microcontroller, wireless communication protocols, cloud computing infrastructure, and data visualization interfaces to support data-driven agricultural decision-making.
 
-The primary objective of the system is to transform traditional farming practices into a data-driven process by enabling continuous monitoring of farm conditions and supporting informed management decisions.
+The primary objective of the system is to modernize traditional agricultural practices by introducing continuous environmental monitoring and enabling intelligent, evidence-based farm management through IoT technologies.
 
 
-## What System Is Being Built?
+## 3.1 System Requirements
 
-This project focuses on the design and implementation of a Smart Farm Monitoring System capable of monitoring critical agricultural parameters in real time.
+### Functional Requirements
 
-The system is designed to collect data from multiple sensing devices deployed throughout a farm environment and transmit this information to cloud-based platforms for storage, analysis, and visualization.
+The system shall:
 
-The proposed system consists of the following major components:
+- Continuously acquire environmental and soil parameters from deployed sensors  
+- Perform real-time data processing using an embedded edge device (ESP32)  
+- Transmit sensor data to cloud platforms via wireless communication  
+- Store and visualize agricultural data for monitoring and analysis  
+- Support remote access to farm environmental conditions  
 
-### Sensing Layer
+### Non-Functional Requirements
 
-Responsible for collecting environmental and soil data.
+The system shall ensure:
 
-Examples include:
+- Low-latency communication (< 2 seconds under stable network conditions)  
+- Reliable and continuous data acquisition  
+- Energy-efficient operation suitable for field deployment  
+- Scalability to support additional sensors and system expansion  
+- Maintainability of firmware and system architecture  
 
-- Temperature sensors
-- Humidity sensors
-- Soil moisture sensors
-- Soil temperature sensors
-- Light intensity sensors
-- Rainfall sensors
 
-### Edge Processing Layer
+## 3.2 System Architecture
 
-Responsible for local data processing and system control.
+The Smart Farm Monitoring System is designed using a layered IoT architecture model consisting of sensing, edge processing, communication, cloud, and application layers.
 
-Primary component:
+Sensors → ESP32 (Edge Layer) → Wireless Communication → Cloud Platform → Visualization Dashboard → End User
 
-- ESP32 microcontroller
 
-### Communication Layer
+### 3.2.1 Sensing Layer
 
-Responsible for transmitting data between the farm and cloud services.
+The sensing layer is responsible for capturing environmental and soil parameters relevant to agricultural monitoring. The system incorporates:
 
-Communication technologies include:
+- Temperature sensors  
+- Humidity sensors  
+- Soil moisture sensors  
+- Light intensity sensors  
+- Future extensions: rainfall, CO₂ concentration, soil pH sensors  
 
-- Wi-Fi
-- HTTP/HTTPS
-- MQTT (future implementation)
 
-### Cloud Layer
+### 3.2.2 Edge Processing Layer
 
-Responsible for data storage, processing, and remote accessibility.
+The ESP32 microcontroller serves as the edge computing unit responsible for:
 
-Potential cloud platforms include:
+- Acquiring data from multiple sensors  
+- Performing local preprocessing and filtering  
+- Managing communication with cloud services  
+- Coordinating system timing and sampling intervals  
 
-- Firebase
-- AWS IoT
-- ThingsBoard
 
-### Application Layer
+### 3.2.3 Communication Layer
 
-Provides visualization and decision-support capabilities.
+Data transmission between the edge device and cloud infrastructure is achieved using:
 
-Examples:
+- Wi-Fi (primary communication protocol)  
+- HTTP/HTTPS protocols for data transfer  
+- MQTT protocol (planned for lightweight IoT messaging optimization)  
 
-- Dashboards
-- Data analytics tools
-- Mobile applications (future implementation)
-- Alert and notification systems
 
+### 3.2.4 Cloud Layer
 
-## What Does the System Achieve?
+The cloud layer provides centralized data management and processing capabilities, including:
 
-The Smart Farm Monitoring System aims to provide farmers with accurate and timely information regarding farm conditions.
+- Data storage and persistence  
+- Historical data analysis  
+- Remote accessibility  
+- Integration with visualization dashboards  
 
-The system achieves the following objectives:
+Potential platforms include Firebase, AWS IoT, and ThingsBoard.
 
-### Real-Time Monitoring
 
-Continuously collects environmental and soil data from the farm.
+### 3.2.5 Application Layer
 
-### Improved Visibility
+The application layer provides user-facing interfaces for:
 
-Provides insight into farm conditions without requiring constant physical inspection.
+- Real-time monitoring dashboards  
+- Data visualization and analytics  
+- Alert and notification systems  
+- Future mobile application integration  
 
-### Data-Driven Decision Support
 
-Enables informed decisions based on actual field conditions rather than assumptions.
+## 3.3 System Data Flow
 
-### Resource Optimization
+The system follows a structured IoT data pipeline from sensing to decision support:
 
-Supports efficient utilization of:
+Environmental Sensors → ESP32 → Data Processing → Wireless Transmission → Cloud Storage → Dashboard Visualization
 
-- Water
-- Fertilizers
-- Energy
-- Labor
 
-### Historical Data Collection
 
-Maintains records of environmental and soil conditions for future analysis.
+### Data Representation
 
-### Foundation for Automation
+Sensor data is transmitted in a lightweight structured format such as JSON:
 
-Provides the infrastructure required for future automated irrigation, environmental control, and predictive analytics systems.
+   json
+{
+  "temperature": 28.5,
+  "humidity": 65,
+  "soilMoisture": 40,
+  "lightIntensity": 720
+}
 
 
-## Why the ESP32 Is Used
+## 3.3 Sampling Characteristics
 
-The ESP32 serves as the central processing and communication unit of the Smart Farm Monitoring System.
+The system operates under defined sensing and communication parameters to ensure consistency in data acquisition and transmission.
 
-It was selected due to its combination of processing capability, connectivity features, flexibility, and suitability for IoT applications.
+- **Sensor Sampling Interval:** 5–30 seconds (configurable depending on application requirements)  
+- **Transmission Mode:** Real-time streaming or buffered batch transmission depending on network stability  
+- **Data Format:** Lightweight IoT-compatible structured payload (e.g., JSON format) optimized for low bandwidth communication  
 
-### Integrated Wi-Fi Connectivity
 
-The ESP32 includes built-in Wi-Fi functionality, enabling direct communication with cloud platforms and remote monitoring systems.
+## 3.4 Selection of ESP32 Microcontroller
 
-### Adequate Processing Power
+The ESP32 microcontroller is selected as the core edge processing unit due to its suitability for IoT-based embedded systems, offering a balance between performance, power efficiency, and integrated wireless communication capabilities.
 
-The dual-core architecture allows the microcontroller to:
+### Key Technical Advantages
 
-- Read multiple sensors
-- Process collected data
-- Handle communication tasks
-- Support future expansion
+#### Integrated Wireless Connectivity
+The ESP32 features built-in Wi-Fi capability, enabling direct communication with cloud platforms without the need for external communication modules. This significantly reduces system complexity and cost.
 
-### Extensive GPIO Support
+#### High Processing Capability
+The dual-core architecture supports concurrent execution of multiple tasks such as sensor data acquisition, local data processing, and wireless communication management, making it suitable for real-time IoT applications.
 
-The ESP32 provides multiple interfaces for sensor integration, including:
+#### Extensive Peripheral Support
+The microcontroller provides multiple hardware interfaces for sensor and module integration, including:
 
-- Digital I/O
-- Analog inputs
-- I2C
-- SPI
-- UART
+- General Purpose Input/Output (GPIO)  
+- Analog-to-Digital Converter (ADC)  
+- Inter-Integrated Circuit (I2C)  
+- Serial Peripheral Interface (SPI)  
+- Universal Asynchronous Receiver-Transmitter (UART)  
 
-### Low Power Consumption
+#### Low Power Consumption
+The ESP32 supports multiple power management modes, including deep sleep functionality, making it suitable for battery-powered and solar-powered agricultural deployments.
 
-The ESP32 supports various power-saving modes, making it suitable for battery-powered and solar-powered agricultural deployments.
+#### Development Ecosystem
+The ESP32 is supported by a mature and widely adopted development ecosystem, including:
 
-### Scalability
+- Arduino Framework  
+- PlatformIO  
+- ESP-IDF (Espressif IoT Development Framework)  
 
-The platform supports future expansion through:
+This ecosystem accelerates development and enhances system maintainability.
 
-- Additional sensors
-- Wireless devices
-- Cloud integrations
-- Automation systems
 
-### Strong Development Ecosystem
+## 3.5 Design Philosophy
 
-The ESP32 benefits from extensive community support and development tools, including:
+The Smart Farm Monitoring System is designed based on fundamental engineering principles to ensure robustness and scalability:
 
-- PlatformIO
-- Arduino Framework
-- ESP-IDF
-- FreeRTOS
+- **Modularity:** Each subsystem operates independently and can be upgraded without affecting the overall system  
+- **Scalability:** The architecture supports future expansion of sensors, devices, and cloud services  
+- **Reliability:** The system ensures consistent and stable data acquisition and transmission  
+- **Maintainability:** Structured firmware and system architecture support long-term updates and debugging  
+- **Cost-effectiveness:** The design prioritizes low-cost components suitable for real-world agricultural deployment  
 
-These resources accelerate development and improve long-term maintainability.
 
+## 3.6 System Constraints
 
-## Design Philosophy
+The system operates under the following technical and environmental constraints:
 
-The Smart Farm Monitoring System is designed around the principles of:
+- Dependence on stable Wi-Fi connectivity for cloud communication  
+- Sensor accuracy limitations determined by hardware specifications  
+- Power constraints in remote or off-grid agricultural environments  
+- Network latency variability in rural deployment scenarios  
+- Limited computational resources compared to advanced edge AI systems  
 
-- Modularity
-- Scalability
-- Reliability
-- Maintainability
-- Cost-effectiveness
 
-The architecture allows individual components to be upgraded or expanded without requiring significant modifications to the overall system.
+## 3.7 Summary
 
+The Smart Farm Monitoring System presents a scalable IoT-based architecture for real-time agricultural monitoring. By integrating environmental sensing devices, ESP32-based edge processing, wireless communication technologies, cloud computing infrastructure, and visualization tools, the system enables efficient and data-driven agricultural management.
 
-The proposed Smart Farm Monitoring System provides a practical and scalable framework for real-time agricultural monitoring. By combining sensors, ESP32-based edge processing, wireless communication, cloud services, and data visualization tools, the system establishes a foundation for intelligent and data-driven farm management.
-
-The design also supports future integration of advanced technologies such as automation, predictive analytics, machine learning, and precision agriculture systems.
+Furthermore, the architecture establishes a strong foundation for future enhancements, including automated irrigation systems, predictive analytics, artificial intelligence integration, and precision agriculture applications.
