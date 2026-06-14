@@ -103,6 +103,8 @@ The project is currently in the design and prototype phase.
 - Dashboard development
 
 
+## Conclusion
+
 The Smart Farm Monitoring System demonstrates strong potential for real-world agricultural monitoring. The results confirm that IoT-based systems can effectively collect, transmit, and present environmental data for decision-making.
 
 Future development will focus on real-world testing, automation, predictive analytics, and precision agriculture features.
