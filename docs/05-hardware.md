@@ -276,6 +276,8 @@ Future additions may include:
 This modular design ensures that new functionality can be integrated without redesigning the entire system.
 
 
+## Conclusion
+
 The Smart Farm Monitoring System hardware architecture combines environmental sensing, soil monitoring, embedded processing, wireless communication, and power management technologies into a scalable agricultural monitoring platform. The ESP32 serves as the intelligent edge device, while the sensor network provides continuous visibility into farm conditions.
 
 The hardware design establishes a robust foundation for future expansion into automation, precision agriculture, predictive analytics, and intelligent farm management systems.
