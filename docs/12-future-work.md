@@ -146,6 +146,7 @@ Scale the system from a single farm prototype to multi-farm or regional deployme
 
 A commercial-grade agricultural monitoring platform.
 
+## Conclusion
 
 The future development of the Smart Farm Monitoring System focuses on transforming the current IoT monitoring platform into a fully intelligent agricultural ecosystem. By integrating artificial intelligence, machine learning, mobile applications, and automation systems, the project evolves into a scalable and commercially viable precision agriculture solution.
 
