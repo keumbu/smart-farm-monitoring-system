@@ -291,6 +291,8 @@ Future versions of the Smart Farm Monitoring System may incorporate:
 These capabilities will further enhance agricultural intelligence and operational efficiency.
 
 
+## Conclusion
+
 Cloud integration enables the Smart Farm Monitoring System to extend beyond simple sensor monitoring and become a comprehensive agricultural intelligence platform. Through the use of cloud services such as Firebase, ThingsBoard, and AWS IoT, the system can store, process, analyze, and visualize agricultural data in real time.
 
 The cloud infrastructure provides the foundation for remote monitoring, historical analysis, automation, predictive analytics, and future precision agriculture applications.
