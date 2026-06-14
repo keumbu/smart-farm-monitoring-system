@@ -288,6 +288,8 @@ To ensure dependable operation, the communication subsystem incorporates:
 These features improve system robustness and data integrity.
 
 
+## Conclusion
+
 The data flow and communication architecture of the Smart Farm Monitoring System enables efficient movement of information from the farm environment to decision-makers. Through the integration of sensors, ESP32 edge computing, Wi-Fi communication, JSON data structures, cloud services, and dashboard applications, the system provides a reliable foundation for real-time agricultural monitoring and intelligent farm management.
 
 The communication framework also supports future expansion through MQTT integration, advanced analytics, automation systems, and large-scale IoT deployments.
