@@ -265,6 +265,8 @@ The architecture supports future integration of:
 - Automated irrigation systems
 
 
+## Conclusion
+
 The Smart Farm Monitoring System architecture provides a structured framework for transforming raw environmental data into actionable agricultural intelligence. Through the integration of edge computing, wireless communication, cloud services, and user-facing applications, the system establishes a scalable and efficient platform for modern data-driven agriculture.
 
 This architecture serves as the foundation upon which future automation, analytics, and precision agriculture capabilities can be built.
