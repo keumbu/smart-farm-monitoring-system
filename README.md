@@ -62,8 +62,6 @@ Sensors → ESP32 → Wi-Fi → Cloud / Local Dashboard → Data Analysis → In
 
 ##  System Architecture
 
-![System Architecture](diagrams/system-architecture-diagram/system-architecture-diagram.drawio.png)
-
 -  **PNG (View Image)**  
   [Open PNG](diagrams/system-architecture-diagram/system-architecture-diagram.drawio.png)
 
@@ -76,8 +74,6 @@ Sensors → ESP32 → Wi-Fi → Cloud / Local Dashboard → Data Analysis → In
 
 ##  Data Flow Diagram
 
-![Data Flow Diagram](diagrams/data-flow-diagram/data-flow-diagram-drawio.png)
-
 -  **PNG (View Image)**  
   [Open PNG](diagrams/data-flow-diagram/data-flow-diagram-drawio.png)
 
@@ -89,8 +85,6 @@ Sensors → ESP32 → Wi-Fi → Cloud / Local Dashboard → Data Analysis → In
 
 
 ##  System Block Diagram
-
-![System Block Diagram](diagrams/system-block-diagram/system-block-diagram.drawio.png)
 
 -  **PNG (View Image)**  
   [Open PNG](diagrams/system-block-diagram/system-block-diagram.drawio.png)
