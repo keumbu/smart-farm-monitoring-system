@@ -1,6 +1,6 @@
 #  Smart Farm Monitoring System
 
-## IoT-Based Agricultural Monitoring System (MVP + Research Prototyp
+## IoT-Based Agricultural Monitoring System (MVP + Research Prototype)
 
 ##  Badges
 
@@ -58,6 +58,21 @@ This project is developed to explore how IoT and embedded systems can be applied
 ##  System Concept
 
 Sensors → ESP32 → Wi-Fi → Cloud / Local Dashboard → Data Analysis → Insights
+
+
+##  System Architecture
+
+![System Architecture](diagrams/architecture-diagram.png)
+
+
+##  Data Flow Diagram
+
+![Data Flow Diagram](diagrams/data-flow-diagram.png)
+
+
+##  System Block Diagram
+
+![System Block Diagram](diagrams/system-block-diagram.png)
 
 
 ##  Features
