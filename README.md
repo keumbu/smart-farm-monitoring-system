@@ -60,7 +60,7 @@ This project is developed to explore how IoT and embedded systems can be applied
 Sensors → ESP32 → Wi-Fi → Cloud / Local Dashboard → Data Analysis → Insights
 
 
-##  System Architecture
+##  System Architecture Diagram
 
 -  **PNG (View Image)**  
   [Open PNG](diagrams/system-architecture-diagram/system-architecture-diagram.drawio.png)
